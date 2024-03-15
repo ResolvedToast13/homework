@@ -11,8 +11,8 @@ const screens =  {
     startScreen: function () {
         return `
             <div id="screen1">
-                <h1>Coding quiz challenge</h1>
-                <p id="description"> description </p>
+                <h1 id="head">Coding quiz challenge</h1>
+                <p id="description"> Try to answer the following code related questions within the time<br> limit. Keep in mind that incorrect answers will penalize yout time<br> score by ten seconds! </p>
                 <button id="button-screen1" onclick="buttons.start(this)"> Start quiz! </button>
             </div>
         `
