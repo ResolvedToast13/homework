@@ -10,9 +10,15 @@
 const screens =  {
     startScreen: function () {
         return `
-            <div id="screen1">
+            <div id="screen1" class="column">
                 <h1>Coding quiz challenge</h1>
-                <p id="description"> description </p>
+                <p id="description"> In this quiz, you'll test your knowledge of fundamental
+                 programming concepts. You'll be presented with five multiple-choice questions
+                  covering various aspects of programming languages and development. 
+                  Each question will have four possible answers, but only one is correct. </p>
+                  <p>
+                    You have ${75} seconds to complete the quiz.
+                  </p>
                 <button id="button-screen1" onclick="buttons.start(this)"> Start quiz! </button>
             </div>
         `
@@ -20,64 +26,66 @@ const screens =  {
     quizScreen1: function () {
         return `
             <div>
-                <button class="button-screen" onclick="buttons.quizScreen1.button1(this)"> hello world </button>
-                <button class="button-screen" onclick="buttons.quizScreen1.button2(this)"> hello world </button>
-                <button class="button-screen" onclick="buttons.quizScreen1.button3(this)"> hello world </button>
-                <button class="button-screen" onclick="buttons.quizScreen1.button4(this)"> hello world </button>
-                <button class="button-screen" onclick="buttons.quizScreen1.button5(this)"> hello world </button>
+                <h2>Question 1: What is the purpose of a loop in programming?</h2>
+                <button class="button-screen" onclick="buttons.quizScreen1.button1(this)"> To execute a block of code multiple times </button>
+                <button class="button-screen" onclick="buttons.quizScreen1.button2(this)"> To define a function </button>
+                <button class="button-screen" onclick="buttons.quizScreen1.button3(this)"> To perform mathematical calculations </button>
+                <button class="button-screen" onclick="buttons.quizScreen1.button4(this)"> To print output to the console </button>
             </div>
         `
     },
     quizScreen2: function () {
         return `
             <div>
-                <button class="button-screen" onclick="buttons.quizScreen2.button1(this)"> hello world </button>
-                <button class="button-screen" onclick="buttons.quizScreen2.button2(this)"> hello world </button>
-                <button class="button-screen" onclick="buttons.quizScreen2.button3(this)"> hello world </button>
-                <button class="button-screen" onclick="buttons.quizScreen2.button4(this)"> hello world </button>
-                <button class="button-screen" onclick="buttons.quizScreen2.button5(this)"> hello world </button>
+                <h2>Question 2: Which data type is used to store a single character in most programming languages?</h2>
+                <button class="button-screen" onclick="buttons.quizScreen2.button1(this)"> Integer </button>
+                <button class="button-screen" onclick="buttons.quizScreen2.button2(this)"> String </button>
+                <button class="button-screen" onclick="buttons.quizScreen2.button3(this)"> Boolean </button>
+                <button class="button-screen" onclick="buttons.quizScreen2.button4(this)"> Character </button>
             </div>
         `
     },
     quizScreen3: function () {
         return `
             <div>
-                <button class="button-screen" onclick="buttons.quizScreen3.button1(this)"> hello world </button>
-                <button class="button-screen" onclick="buttons.quizScreen3.button2(this)"> hello world </button>
-                <button class="button-screen" onclick="buttons.quizScreen3.button3(this)"> hello world </button>
-                <button class="button-screen" onclick="buttons.quizScreen3.button4(this)"> hello world </button>
-                <button class="button-screen" onclick="buttons.quizScreen3.button5(this)"> hello world </button>
+                <h2>Question 3: What does the acronym "HTML" stand for in web development?</h2>
+                <button class="button-screen" onclick="buttons.quizScreen3.button1(this)"> Hyper Text Markup Language </button>
+                <button class="button-screen" onclick="buttons.quizScreen3.button2(this)"> High-level Text Manipulation Language </button>
+                <button class="button-screen" onclick="buttons.quizScreen3.button3(this)"> Home Tool Markup Language </button>
+                <button class="button-screen" onclick="buttons.quizScreen3.button4(this)"> Hyperlinks and Text Markup Language </button>
             </div>
         `
     },
     quizScreen4: function () {
         return `
             <div>
-                <button class="button-screen" onclick="buttons.quizScreen4.button1(this)"> hello world </button>
-                <button class="button-screen" onclick="buttons.quizScreen4.button2(this)"> hello world </button>
-                <button class="button-screen" onclick="buttons.quizScreen4.button3(this)"> hello world </button>
-                <button class="button-screen" onclick="buttons.quizScreen4.button4(this)"> hello world </button>
-                <button class="button-screen" onclick="buttons.quizScreen4.button5(this)"> hello world </button>
+                <h2>Question 4: In JavaScript, what is the property used to get the length of a list or a string?</h2>
+                <button class="button-screen" onclick="buttons.quizScreen4.button1(this)"> size </button>
+                <button class="button-screen" onclick="buttons.quizScreen4.button2(this)"> length </button>
+                <button class="button-screen" onclick="buttons.quizScreen4.button3(this)"> count </button>
+                <button class="button-screen" onclick="buttons.quizScreen4.button4(this)"> len </button>
+                <button class="button-screen" onclick="buttons.quizScreen4.button5(this)"> amount </button>
             </div>
         `
     },
     quizScreen5: function () {
         return `
             <div>
-                <button class="button-screen" onclick="buttons.quizScreen5.button1(this)"> hello world </button>
-                <button class="button-screen" onclick="buttons.quizScreen5.button2(this)"> hello world </button>
-                <button class="button-screen" onclick="buttons.quizScreen5.button3(this)"> hello world </button>
-                <button class="button-screen" onclick="buttons.quizScreen5.button4(this)"> hello world </button>
-                <button class="button-screen" onclick="buttons.quizScreen5.button5(this)"> hello world </button>
+                <h2>Question 5: What does the term "IDE" stand for in the context of programming?</h2>
+                <button class="button-screen" onclick="buttons.quizScreen5.button1(this)"> Integrated Development Environment </button>
+                <button class="button-screen" onclick="buttons.quizScreen5.button2(this)"> Interactive Debugging Environment </button>
+                <button class="button-screen" onclick="buttons.quizScreen5.button3(this)"> Internet Development Extension </button>
+                <button class="button-screen" onclick="buttons.quizScreen5.button4(this)"> Integrated Design Engine </button>
+                <button class="button-screen" onclick="buttons.quizScreen5.button5(this)"> Industrial Design Entrepreneur </button>
             </div>
         `
     },
     scoreScreen: function () {
         return `
-            <div>
-                <p>Score Screen!!</p>
-                <input id="user-name" type="text" name="name">
-                <button id="button-screen" onclick="buttons.buttonHighScoresScreen(this)"> hello world </button>
+            <div class="column">
+                <h2>Score Screen!!</h2>
+                <input id="user-name" type="text" name="name" placeholder="What's your name">
+                <button id="button-screen" onclick="buttons.buttonHighScoresScreen(this)"> Submit </button>
             </div>
         `
     },
@@ -99,10 +107,12 @@ const screens =  {
 
         return `
             <div>
-                <p>High scores!!</p>
+                <h1>High scores!!</h1>
                 ${scoresTables}
+                <div class="row">
                 <button id="button-screen" onclick="buttons.buttonGoToStartScreen(this)"> Go back!</button>
-                <button id="button-screen" onclick="buttons.clearHighScores(this)"> Clear scores</button>
+                <button id="button-screen" onclick="buttons.clearHighScores(this)"> Clear scores</button></div>
+                
             </div>
         `
     },
@@ -114,6 +124,7 @@ const startTimer = function (screensHTML, screen) {
     const interval = setInterval(function () {
         if (timer > -1) {
             document.getElementById('countdown').innerHTML = timer;
+            document.getElementById('timeleft').innerText = 'Time: '
             timer--;
         } else {
             screensHTML.innerHTML = screens.scoreScreen();
@@ -145,7 +156,6 @@ const buttons = {
                 const screen = btn.parentNode;
                 const screens = screen.parentNode;
                 
-                timer -= 10;
                 screens.innerHTML = this.screens.quizScreen2();
             }
         },
@@ -172,14 +182,6 @@ const buttons = {
                 const screen = btn.parentNode;
                 const screens = screen.parentNode;
 
-                screens.innerHTML = this.screens.quizScreen2();
-            }
-        },
-        button5: function(btn) {
-            if (btn) {
-                const screen = btn.parentNode;
-                const screens = screen.parentNode;
-                
                 timer -= 10;
                 screens.innerHTML = this.screens.quizScreen2();
             }
@@ -192,6 +194,7 @@ const buttons = {
                 const screen = btn.parentNode;
                 const screens = screen.parentNode;
 
+                timer -= 10;
                 screens.innerHTML = this.screens.quizScreen3();
             }
         },
@@ -218,16 +221,6 @@ const buttons = {
                 const screen = btn.parentNode;
                 const screens = screen.parentNode;
 
-                timer -= 10;
-                screens.innerHTML = this.screens.quizScreen3();
-            }
-        },
-        button5: function(btn) {
-            if (btn) {
-                const screen = btn.parentNode;
-                const screens = screen.parentNode;
-                
-                timer -= 10;
                 screens.innerHTML = this.screens.quizScreen3();
             }
         },
@@ -239,7 +232,6 @@ const buttons = {
                 const screen = btn.parentNode;
                 const screens = screen.parentNode;
                 
-                timer -= 10;
                 screens.innerHTML = this.screens.quizScreen4();
             }
         },
@@ -257,6 +249,7 @@ const buttons = {
                 const screen = btn.parentNode;
                 const screens = screen.parentNode;
 
+                timer -= 10;
                 screens.innerHTML = this.screens.quizScreen4();
             }
         },
@@ -265,15 +258,6 @@ const buttons = {
                 const screen = btn.parentNode;
                 const screens = screen.parentNode;
 
-                timer -= 10;
-                screens.innerHTML = this.screens.quizScreen4();
-            }
-        },
-        button5: function(btn) {
-            if (btn) {
-                const screen = btn.parentNode;
-                const screens = screen.parentNode;
-                
                 timer -= 10;
                 screens.innerHTML = this.screens.quizScreen4();
             }
@@ -320,7 +304,7 @@ const buttons = {
             if (btn) {
                 const screen = btn.parentNode;
                 const screens = screen.parentNode;
-                
+
                 timer -= 10;
                 screens.innerHTML = this.screens.quizScreen5();
             }
@@ -412,6 +396,7 @@ const buttons = {
             const score = document.getElementById('countdown');
             if (score) {
                 score.innerHTML = null;
+                document.getElementById('timeleft').innerText = '';
             }
 
             screens.innerHTML = this.screens.startScreen();
@@ -428,5 +413,9 @@ const buttons = {
     }
 }
 
-const highscores = [];
-localStorage.setItem('highscores', JSON.stringify(highscores))
+var highscores = localStorage.getItem('highscores ');
+
+if (!highscores) {
+    highscores = [];
+    localStorage.setItem('highscores', JSON.stringify(highscores));
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+    <body class="main">
+        <div class="header background-color">
+            <div class="row max-width center-elements">
+                <div class="column cl-2 center-elements">
+                    <h1 class="title">Weather Dashboard</h1>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div class="row">
+                <div class="column cl-2">
+                    <div id="search" class="column">
+                        <input type="text" id="cityName" placeholder="Search a city" autocomplete="off">
+                        <button id="searchCity" class="center-elements">Search</button>
+                    </div>
+                    <div id="historical" class="column pd-10 scrollable"></div>
+                </div>
+                <div class="column cl-10 center-elements weather">
+                    <div id="cityInfo" class="column cl-12 border" style="display: none;"></div>
+                    <h2 class="fiveDays" style="display: none;">5-Day Forecast:</h2>
+                    <div class="fiveDays row max-width center-elements" style="display: none;">
+                        <div class="column cl-2 card mg-10 pd-10"></div>
+                        <div class="column cl-2 card mg-10 pd-10"></div>
+                        <div class="column cl-2 card mg-10 pd-10"></div>
+                        <div class="column cl-2 card mg-10 pd-10"></div>
+                        <div class="column cl-2 card mg-10 pd-10"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./assets/index.js"></script>
+</html>

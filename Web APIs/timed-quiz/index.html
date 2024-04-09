@@ -2,14 +2,24 @@
     <head>
         <!-- css -->
         <link rel="stylesheet" href="assets/style.css">
-        <a href="/highscores" id="view-highscores" onclick="buttons.viewHighScores(this)">View Highscores</a>
-        <p id="countdown"></p>
+        
+        
     </head>
-    <body>
-        <div id="screens">
-            <p>
-                hello world
-            </p>
+    <body class="main">
+        <div class="header">
+            <div class="row max-width">
+                <div class="column cl-11"><a href="/highscores" id="view-highscores" onclick="buttons.viewHighScores(this)">View Highscores</a></div>
+                <div class="row cl-1"><p id="timeleft"></p><p id="countdown"></p></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row center">
+                <div id="screens" class="column cl-5">
+                    <p>
+                        hello world
+                    </p>
+                </div>
+            </div>
         </div>
     </body>
     <!-- loading scripts -->

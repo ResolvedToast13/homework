@@ -10,8 +10,9 @@ body {
   min-height: 100%;
 }
 
-main {
+.main {
     display: block;
+    overflow: hidden;
 }
 
 .container {
@@ -19,6 +20,7 @@ main {
     max-width: 200%;
     margin-left: auto;
     margin-right: auto;
+    padding: 7px;
 }
 
 .row {
@@ -27,6 +29,12 @@ main {
     flex-wrap: wrap;
     justify-content: left;
     max-width: inherit;
+    margin: 1px;
+    padding: 1px;
+}
+
+.background-color {
+    background-color: darkslateblue;
 }
 
 .max-width {
@@ -37,7 +45,8 @@ main {
     display: flex;
     flex-direction: row;
     max-width: 100%;
-    margin: 10px;
+    padding: 10px;
+    min-height: 10%;
 }
 
 a {
@@ -50,9 +59,23 @@ a {
 .column {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: left;
     max-width: inherit;
+    padding: 1px;
+    margin: 1px;
+}
+
+.border {
+    border: 1px solid #0f0e0f;
+    border-radius: 5px;
+}
+
+.mg-10 {
+    margin: 10px !important;
+}
+
+.pd-10 {
+    padding: 10px !important;
 }
 
 .cl-1 {
@@ -64,40 +87,54 @@ a {
 }
 
 .cl-3 {
-    width: 24%;
+    width: 25%;
 }
 
 .cl-4 {
-    width: 32%;
+    width: 33%;
 }
 
 .cl-5 {
-    width: 40%;
+    width: 41%;
 }
 
 .cl-6 {
-    width: 48%;
+    width: 50%;
 }
 
 .cl-7 {
-    width: 56%;
+    width: 58%;
+}
+
+.cl-8 {
+    width: 66%;
+}
+
+.cl-9 {
+    width: 75%;
 }
 
 .cl-10 {
-    width: 80%;
+    width: 83%;
 }
 
 .cl-11 {
-    width: 88%;
+    width: 91%;
 }
 
-.center {
-    justify-content: center;
+.cl-12 {
+    width: 100%;
+}
+
+.center-elements {
+    
+    justify-content: space-between !important;
 }
 
 input[type=text] {
-    width: 100%;
+    width: inherit;
     font-size: 20px;
+    margin: 2px;
 }
 
 td:nth-child(even), th:nth-child(even) {
@@ -119,7 +156,7 @@ table {
 button {
     display: flex;
     /* align-self: center; */
-    width: fit-content;
+    width: inherit;
     background-color: darkslateblue;
     color: antiquewhite;
     font-size: 20px;
@@ -128,17 +165,39 @@ button {
     margin: 8px;
     margin-left: 0px;
     border-radius: 8px;
+    text-align: center;
 }
 
-#timeleft {
-    font-weight: bold;
-    font-size: 20px;
-    margin: 5px;
+button[disabled],
+button:disabled {
+    background-color: rgb(97, 92, 126);
 }
 
-#countdown {
-    font-weight: bold;
-    font-size: 20px;
-    margin: 5px;
-    color: crimson;
+h1.title {
+    margin: 0px;
+    color: antiquewhite;
+}
+
+.card {
+    border-radius: 8px;
+    background-color: rgb(92, 85, 141);
+    color: antiquewhite;
+    font-size: 20px;    
+}
+
+.cities {
+    background-color: #9da0a1;
+    color: black;
+    font-size: 17px;
+    width: inherit;
+    text-align: center;
+}
+
+.scrollable {
+    overflow-y: scroll;
+    height: 67%;
+}
+
+.weather {
+    height: 80%;
 }
